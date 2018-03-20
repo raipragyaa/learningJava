@@ -44,6 +44,8 @@ public class BasicsTest {
     public void checkLcm(){
         assertThat(basics.lcm(2,3),is(6));
     }
-    
+    public void checkFactorial(){
+        assertThat(basics.factorial(5),is(120));
+    }
 }
 

@@ -19,7 +19,7 @@ public class Basics {
 
     public int gcd(int num1, int num2) {
         if (num1 < num2) {
-            int sum = 0;
+            int sum;
             sum = num1 + num2;
             num1 = sum - num1;
             num2 = sum - num1;
@@ -36,4 +36,13 @@ public class Basics {
     public int lcm(int num1, int num2) {
         return (num1 * num2)/gcd(num1, num2);
     }
+
+    public double factorial(int number) {
+        int fact = 1;
+        for(int counter = number; counter<=number; counter--){
+         fact = counter * fact;
+        }
+        return fact;
+    }
+
 }
