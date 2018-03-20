@@ -44,8 +44,16 @@ public class BasicsTest {
     public void checkLcm(){
         assertThat(basics.lcm(2,3),is(6));
     }
+
+    @Test
     public void checkFactorial(){
         assertThat(basics.factorial(5),is(120));
+        assertThat(basics.factorial(6),is(720));
+    }
+
+    @Test
+    public void sumOfNNumber(){
+        assertThat(basics.sumOfNNumbers(2,5),is(14));
     }
 }
 

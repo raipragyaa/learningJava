@@ -37,12 +37,19 @@ public class Basics {
         return (num1 * num2)/gcd(num1, num2);
     }
 
-    public double factorial(int number) {
+    public int factorial(int number) {
         int fact = 1;
-        for(int counter = number; counter<=number; counter--){
+        for(int counter = number; counter >=1; counter--){
          fact = counter * fact;
         }
         return fact;
     }
 
+    public int sumOfNNumbers(int minLim, int maxLim) {
+        int sum = 0;
+        for (int couter = minLim;couter<=maxLim;couter++){
+            sum = sum+couter;
+        }
+        return sum;
+    }
 }
