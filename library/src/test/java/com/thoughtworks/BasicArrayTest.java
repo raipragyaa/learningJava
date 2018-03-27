@@ -25,4 +25,10 @@ public class BasicArrayTest {
             assertThat(basicArray.selectOdd(input),is(expected));
     }
 
+    @Test
+    public void checkSelectEven() {
+        ArrayList<Integer> input = new ArrayList<Integer>(Arrays.asList(1, 2, 4, 3, 5,6));
+        ArrayList<Integer> expected = new ArrayList<Integer>(Arrays.asList(2,4,6));
+        assertThat(basicArray.selectEven(input),is(expected));
+    }
 }
