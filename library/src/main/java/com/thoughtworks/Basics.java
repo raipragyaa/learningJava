@@ -37,7 +37,7 @@ public class Basics {
         return (num1 * num2)/gcd(num1, num2);
     }
 
-    public int factorial(int number) {
+    public long factorial(int number) {
         int fact = 1;
         for(int counter = number; counter >=1; counter--){
          fact = counter * fact;

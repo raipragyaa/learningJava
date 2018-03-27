@@ -1,3 +1,5 @@
+package com.thoughtworks;
+
 import com.thoughtworks.Basics;
 import org.junit.Before;
 import org.junit.Test;
@@ -47,8 +49,8 @@ public class BasicsTest {
 
     @Test
     public void checkFactorial(){
-        assertThat(basics.factorial(5),is(120));
-        assertThat(basics.factorial(6),is(720));
+        assertThat(basics.factorial(5),is(120L));
+        assertThat(basics.factorial(6),is(720L));
     }
 
     @Test
