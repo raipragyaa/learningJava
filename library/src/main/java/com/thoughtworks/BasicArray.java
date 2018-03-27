@@ -21,4 +21,20 @@ public class BasicArray {
             }
         return result;
     }
+
+    public int sumOf(ArrayList<Integer> array) {
+        int sum = 0;
+        for (Integer number :array ){
+            sum += number;
+        }
+        return  sum;
+    }
+
+    public ArrayList<Integer> mapLength(ArrayList<String> names) {
+        ArrayList<Integer> result = new ArrayList<Integer>();
+        for (String name :names) {
+            result.add(name.length());
+        }
+        return result;
+    }
 }
